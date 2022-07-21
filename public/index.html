@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Enter Data</title>
+</head>
+<body>
+    <h2>Enter Pets</h2>
+    <form action="/api/products/" method="post">
+        <label for="title">Title: </label>
+        <input type="text" id="title" name="title"/>
+        <label for="price">Precio AR$: </label>
+        <input type="number" id="price" name="price"/>
+        <label for="description">Description: </label>
+        <textarea name="description" id="description" cols="50" rows="2"></textarea>
+        <label for="universe">Universe:</label>
+        <input type="text" id="universe" name="universe"/>
+        <label for="details">Description: </label>
+        <textarea name="details" id="details" cols="50" rows="6"></textarea>
+        <label for="stock">Stock: </label>
+        <input type="number" id="stock" name="stock"/>
+        <button>Send</button>
+    </form>
+    
+    <br />
+    <hr />
+
+    </body>
+</body>
+</html>

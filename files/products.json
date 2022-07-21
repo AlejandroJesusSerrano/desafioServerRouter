@@ -1,0 +1,263 @@
+[
+  {
+    "title": "Spider-Man",
+    "price": "127000",
+    "description": "Lorem ipsum dolor sit amet consectetur!",
+    "universe": "Marvel",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "7",
+    "id": 1
+  },
+  {
+    "title": "Batman",
+    "price": "127000",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.",
+    "universe": "DC",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "7",
+    "id": 2
+  },
+  {
+    "title": "Iron-Man",
+    "price": "129000",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "universe": "Marvel",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "5",
+    "id": 3
+  },
+  {
+    "title": "Superman",
+    "price": "130000",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+    "universe": "DC",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "10",
+    "id": 4
+  },
+  {
+    "title": "Black-Panther",
+    "price": "130000",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis odit.",
+    "universe": "Marvel",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "4",
+    "id": 5
+  },
+  {
+    "title": "Camus de Acuario",
+    "price": "130000",
+    "description": "Lorem, ipsum dolor sit amet quisquam.",
+    "universe": "MangaAnime",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "2",
+    "id": 6
+  },
+  {
+    "title": "Darth Vader",
+    "price": "1450000",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis odit, architecto.",
+    "universe": "StarWars",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "15",
+    "id": 7
+  },
+  {
+    "title": "La Muerte de Hiraya",
+    "price": "213000",
+    "description": "Lorem, ipsum dolor sit amet officiis impedit? Libero, blanditiis quisquam.",
+    "universe": "MangaAnime",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "1",
+    "id": 8
+  },
+  {
+    "title": "Batman - Funko POP",
+    "price": "30000",
+    "description": "Lorem, ipsum dolor libero, blanditiis quisquam.",
+    "universe": "Funko",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "10",
+    "id": 9
+  },
+  {
+    "title": "Burns Traigo Paz - Funko POP",
+    "price": "35000",
+    "description": "Lorem, maiores eum officiis impedit? Libero, blanditiis quisquam.",
+    "universe": "Funko",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "3",
+    "id": 10
+  },
+  {
+    "title": "Monica Geller - Funko POP",
+    "price": "30000",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis odit, architecto, tempore.",
+    "universe": "Funko",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "1",
+    "id": 11
+  },
+  {
+    "title": "Gellert Grindelwald",
+    "price": "160000",
+    "description": "Lorem, dolor laudantium aliquam molestiae itaque.",
+    "universe": "HarryPotter",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "5",
+    "id": 12
+  },
+  {
+    "title": "Harry Potter - Quiditch",
+    "price": "1730000",
+    "description": "Lorem, ipsum dolor sit exercitationem blanditiis.",
+    "universe": "HarryPotter",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "17",
+    "id": 13
+  },
+  {
+    "title": "Michel Jordan - NBA",
+    "price": "125000",
+    "description": "Lorem, adipisicing elit blanditiis quisquam.",
+    "universe": "SportsArtists",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "2",
+    "id": 14
+  },
+  {
+    "title": "Nezuko & Tanjiro",
+    "price": "200000",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "universe": "MangaAnime",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "4",
+    "id": 15
+  },
+  {
+    "title": "Mandalorian & Baby Yoda",
+    "price": "175000",
+    "description": "Quis odit, architecto, tempore nihil ut qui voluptate.",
+    "universe": "StarWars",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "3",
+    "id": 16
+  },
+  {
+    "title": "Diego Armando Maradona",
+    "price": "100000",
+    "description": "Maiores eum officiis impedit? Libero, blanditiis quisquam.",
+    "universe": "SportsArtists",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "20",
+    "id": 17
+  },
+  {
+    "title": "Michael Jackson",
+    "price": "100000",
+    "description": "Ipsum dolor sit eum officiis impedit? Libero, blanditiis quisquam.",
+    "universe": "SportsArtists",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "1",
+    "id": 18
+  },
+  {
+    "title": "Naruto",
+    "price": "145000",
+    "description": "Consectetur adipisicing elit. Quis odit, libero, blanditiis quisquam.",
+    "universe": "MangaAnime",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "2",
+    "id": 19
+  },
+  {
+    "title": "Naruto y Minato",
+    "price": "230000",
+    "description": "Adipisicing elit. officiis impedit? Libero, blanditiis quisquam.",
+    "universe": "MangaAnime",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "1",
+    "id": 20
+  },
+  {
+    "title": "Trafalgar D. Water Law",
+    "price": "175000",
+    "description": "Lorem, libero, blanditiis quisquam.",
+    "universe": "MangaAnime",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "1",
+    "id": 21
+  },
+  {
+    "title": "Freddie Mercury - Wimbledon",
+    "price": "130000",
+    "description": "Laudantium aliquam molestiae itaque et exercitationem maiores eum officiis impedit?",
+    "universe": "SportsArtists",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "3",
+    "id": 22
+  },
+  {
+    "title": "Vegeta",
+    "price": "130000",
+    "description": "Molestiae itaque et exercitationem maiores eum officiis.",
+    "universe": "MangaAnime",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "5",
+    "id": 23
+  },
+  {
+    "title": "Vegito",
+    "price": "130000",
+    "description": "Eum officiis impedit? Libero, blanditiis quisquam.",
+    "universe": "MangaAnime",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "5",
+    "id": 24
+  },
+  {
+    "title": "Voldemort",
+    "price": "135000",
+    "description": "Exercitationem maiores eum officiis impedit? Libero, blanditiis quisquam.",
+    "universe": "HarryPotter",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore debitis culpa nostrum optio? Necessitatibus, ex, incidunt, adipisci omnis soluta exercitationem placeat ipsum quas commodi reiciendis numquam aliquid deleniti veritatis!",
+    "stock": "2",
+    "id": 25
+  },
+  {
+    "title": "Batman Who Laugs",
+    "price": "195000",
+    "description": "Action Figure, Scale 1/6",
+    "universe": "DC",
+    "details": "Lorem Impsum",
+    "stock": "3",
+    "id": 26
+  },
+  {
+    "title": "Monky D. Luffy",
+    "price": "200000",
+    "description": "Action Figure, Scale 1/6",
+    "universe": "MangaAnime",
+    "details": "Lorem Impsum",
+    "stock": "6",
+    "id": 27
+  },
+  {
+    "title": "Iron Man Zombie",
+    "price": "186000",
+    "description": "Action Figure, Scale 1/6",
+    "universe": "Marvel",
+    "details": "Lorem Impsum",
+    "stock": "4",
+    "id": 28
+  },
+  {
+    "title": "hola ",
+    "price": "5000",
+    "description": "esto es ",
+    "universe": "una ",
+    "details": "pruebaaaaaaaaa",
+    "stock": "5",
+    "id": 29
+  }
+]
