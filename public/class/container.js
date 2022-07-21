@@ -36,7 +36,7 @@ class Container {
     
     getById  = async (id) => {
         try { 
-            const product = await this.container.find(product => product.id === id);
+            const product = await this.container.find(product => product.id == id);
             if(id <= 0 || id > this.container.length || isNaN(id)){
                 const notFind = {Error: "Producto no encontrado"};
                 return notFind;            
