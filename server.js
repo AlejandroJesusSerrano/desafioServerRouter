@@ -1,31 +1,49 @@
 const express = require("express");
-const { Router } = express;
+const handlebars = require("express-handlebars");
 const app = express();
-
 const PORT = 8080;
-
-
-const Container = require('./public/class/container');
-const routerProducts = require("./routes/products");
+const Container = require('./public/class/container'); 
 const products = "./files/products.json";
-const af = new Container(products)
+const af = new Container(products);
+const { Router } = require("express");
+const routerProducts = Router();
+
 
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/products", routerProducts);
+app.use("/", routerProducts);
 
-routerProducts.get("/", (req, res) => {
-    af.getAll().then((product) => res.json(product))
+const hbs = handlebars.create({
+    extname: '.hbs',
+    defaultLayout: 'index.hbs', 
+    layoutsDir: __dirname + '/views/layout',
+    //partialsDir: __dirname + 'views/partials/'
+});
+    
+app.engine('hbs', hbs.engine);
+app.set('view engine', 'hbs');
+app.set('views', './views');
+
+routerProducts.get("/productsList", (req, res) => {
+    af.getAll().then((product) => res.render("main", {
+        allProducts: product, 
+        listExists: true
+        }));
+});
+
+routerProducts.get("/products", (req, res) => {
+    res.render("form")
+});
+
+routerProducts.post("/products", (req, res) => {
+    af.save(req.body).then((product) => res.render("form", {
+        }));
 });
 
 routerProducts.get("/:id", (req, res) => {
     af.getById(req.params.id).then((product) => res.json(product))
-});
-
-routerProducts.post("/", (req, res) =>{
-    af.save(req.body).then((product) => res.json(product))
 });
 
 routerProducts.put("/:id", (req, res) =>{
@@ -42,7 +60,3 @@ const server = app.listen (PORT, () => {
 }); 
 
 server.on ("error", error => console.log(`Error: ${error}`))
-
-
-
-

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
+
+* {
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body{
+    background-color: #212121;
+    color: #dedede;
+}
+
+label{
+    font-size: 1em;
+    font-weight: 600;
+    color: #f2c230;
+    border-radius: .25em;
+}
+.btnModel{
+    border-radius: .25em;
+    width:100%;
+    background-color: #f2c230;
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lblImg{
+    color:#212121;
+    border-radius: .25em;
+}
+
+input{
+    border:none;
+    width:100%;
+    background-color: #f2c230;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #212121;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formTitle{
+    color: #f2c230;
+    font-weight: 700;
+    font-size: 4em;
+    margin: 1em 0 1em 0;
+    text-align: center;
+}
+
+.title{
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: #313131;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+.price{
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: #313131;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: #313131;
+    color:#212121;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+.desc{
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: #313131;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+.universe{
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: #313131;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+.selectCss {
+    display: block;
+    font-size: 1em;
+    color: #212121;
+    padding: .4em 1.4em .3em .8em;
+    width: 400px;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: auto;
+    border: none;
+    border-radius: .25em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #f2c230;
+}
+
+.details{
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: #313131;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+textarea{
+    border:none;
+    width:100%;
+    background-color: #f2c230;
+    border-radius: .25em;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #212121;
+}
+
+.stok{
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: #313131;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: .5em;
+}
+
+.addProduct{
+    border: .2em solid #313131;
+    background-color: #f2c230;
+    align-items: center;
+    padding: .75em;
+    border-radius: 1em;
+    color:#212121;
+    font-size: 1.5em;
+    width: 15em;
+
+}
+
+.goToList{
+    border: .2em solid #f2c230;
+    background-color: #212121;
+    align-items: center;
+    padding: .75em;
+    border-radius: 1em;
+    color: #f2c230;
+    font-size: 1.5em;
+    width:15em;
+}
+
+.goToForm{
+    border: none;
+    background-color: #f2c230;
+    align-items: center;
+    padding: .75em;
+    border-radius: 1em;
+    color:#212121;
+    font-size: 1.5em;
+    width:20em;
+}
+
+.prodContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5em;
+    background-color: #313131;
+}
+
+.tableContainer{
+    display: flex;
+    width: 90%;
+    padding: 0;
+    background-color: #212121;
+}
+
+.table{
+    display: flex;
+    box-sizing: content-box;
+    width: 100%;
+    padding: .5em;
+    background-color: #313131;
+}
+
+table{
+    border: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+tr{
+    display: flex;
+    align-items: center;
+    border-bottom: #f2c230 solid 1.5px;
+    
+}
+
+th, td{ 
+    border: none;
+    padding: .5em;
+    background-color: #212121;
+    color: #f2c230;
+    width: 16.66%;
+}
+.colTitles{
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5em;
+    background-color: #313131;
+    color: #f2c230;
+    text-decoration: none;
+    border-bottom: #f2c230 solid .2em;
+}
+
+tbody{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5em;
+    background-color: #313131;
+    color: #f2c230;
+}
+
+.tItems{
+    width: 100%;
+    padding: .5em;
+    font-size: 1.25em;
+    background-color: #313131;
+    color: #f2c230;
+    text-align: center;
+}
+
+.cellImg{
+    padding: .5em;
+    width: 17.5em;
+    background-color: #313131;
+    color: #f2c230;
+}
+

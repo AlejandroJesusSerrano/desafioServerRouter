@@ -23,7 +23,7 @@ class Container {
 
     save = async (product) => {
         const lastId = this.container.length; 
-     
+
         try {
             product.id = lastId+1;
             this.container.push(product);
@@ -31,8 +31,8 @@ class Container {
             return product;
         } catch (error) {
             console.log (error);
-        }
-    }
+        };
+    };
     
     getById  = async (id) => {
         try { 
@@ -63,28 +63,8 @@ class Container {
             return this.container[random];
         } catch (err) {
             console.log ('lo sentimos a habido un error', err);
-        }
-    }
-
-    // update = async (id, product) => {
-    //     try {
-    //         const productToUpdate = await this.getById(id);
-    //         if(id<=0 || id > this.container.length || isNaN(id) || productToUpdate.Error) {
-    //             const notFind = {Error: "Producto no encontrado"};
-    //             return notFind;            
-    //         }
-    //         productToUpdate.name = product.name;
-    //         productToUpdate.price = product.price;
-    //         productToUpdate.description = product.description;
-    //         productToUpdate.universe = product.universe;
-    //         productToUpdate.details = product.details;
-    //         productToUpdate.stock = product.stock;
-            
-    //         this.saveAll(this.container);
-    //     } catch (err) {
-    //         console.log ( 'lo sentimos a habido un error', err);
-    //     };
-    // };
+        };
+    };
 
     deleteById = async (id) => {
         try {
@@ -95,7 +75,6 @@ class Container {
             console.log ('Lo sentimos ha habido un error', error);
         };
     };
-
         
 
     deleteAll = async () => {
@@ -111,5 +90,4 @@ class Container {
 
 
 module.exports = Container;
-
 
