@@ -33,17 +33,6 @@ class Container {
             console.log (error);
         };
     };
-
-    update = async (id, product) => {
-        try {
-            const index = await this.container.findIndex(prod => prod.id === id);
-            this.container[index] = product;    
-            this.saveAll(this.container);
-            return product;
-        } catch (error) {
-            console.log (error);
-        };
-    };
     
     getById  = async (id) => {
         try { 

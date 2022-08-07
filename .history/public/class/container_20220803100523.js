@@ -33,17 +33,6 @@ class Container {
             console.log (error);
         };
     };
-
-    update = async (id, product) => {
-        try {
-            const index = await this.container.findIndex(prod => prod.id === id);
-            this.container[index] = product;    
-            this.saveAll(this.container);
-            return product;
-        } catch (error) {
-            console.log (error);
-        };
-    };
     
     getById  = async (id) => {
         try { 
@@ -79,7 +68,7 @@ class Container {
 
     deleteById = async (id) => {
         try {
-            const filtered = this.container.filter(product => product.id !== id);
+            const filtered = this.container.fiter(product => product.id !== id);
             this.container = filtered;
             this.saveAll(filtered);
         } catch (error) {

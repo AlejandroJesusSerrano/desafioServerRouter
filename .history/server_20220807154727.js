@@ -42,15 +42,15 @@ routerProducts.post("/products", (req, res) => {
         }));
 });
 
-routerProducts.get("/products/:id", (req, res) => {
+routerProducts.get("/:id", (req, res) => {
     af.getById(req.params.id).then((product) => res.json(product))
 });
 
-routerProducts.put("/products/:id", (req, res) =>{
+routerProducts.put("/:id", (req, res) =>{
     af.update(req.params.id, req.body).then((product) => res.json(product))
 });
 
-routerProducts.delete("/products/:id", (req, res) =>{
+routerProducts.delete("/:id", (req, res) =>{
     af.deleteById(req.params.id).then((product) => res.json(product))
 });
     
