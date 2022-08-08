@@ -39,44 +39,20 @@ routerProducts.get("/products", (req, res) => {
 
 routerProducts.post("/products", (req, res) => {
     af.save(req.body).then(res.render("form", {
-    }));
+        }));
+});
+
+routerProducts.get("/products/:id", (req, res) => {
+    af.getById(req.params.id).then((product) => res.json(product))
 });
 
 routerProducts.get("/products/modify", (req, res) => {
-    af.getById(req.params.id).then(res.render("formSelectIdToUpdate", {}
-    ));
+    res.render("formSelectIdToUpdate")
 });
 
-routerProducts.post("/products/modify", (req, res) => {
-    af.getById(req.params.id).then(res.render("formSelectIdToUpdate", {id}
-    ));
+routerProducts.put("/products/modify/:id", (req, res) =>{
+    af.update(req.params.id, req.body).then((product) => res.json(product))
 });
-
-routerProducts.get("/products/modify/:id", (req, res) => {
-    af.getById(req.params.id).then((product) => res.render("formUp", 
-    {
-        product: product
-    }
-    ));
-});
-
-routerProducts.put("/products/modify/:id", (req, res) => {
-    af.update(req.params.id, req.body).then(res.redirect("/productsList"));
-});
-
-
-// routerProducts.post("/products/modify", (req, res) => {
-//     af.getById(req.params.id).then(product) => ((res.render("formUp", (id))
-//     ));
-// });
-
-// routerProducts.get("/products/modify/:id", (req, res) => {
-//     res.render("formUp")
-// });
-
-// routerProducts.put("/products/modify/:id", (req, res) =>{
-//     af.update(req.params.id, req.body).then((product) => res.json(product))
-// });
 
 routerProducts.delete("/products/:id", (req, res) =>{
     af.deleteById(req.params.id).then((product) => res.json(product))

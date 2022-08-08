@@ -39,20 +39,14 @@ routerProducts.get("/products", (req, res) => {
 
 routerProducts.post("/products", (req, res) => {
     af.save(req.body).then(res.render("form", {
-    }));
+        }));
 });
 
-routerProducts.get("/products/modify", (req, res) => {
-    af.getById(req.params.id).then(res.render("formSelectIdToUpdate", {}
-    ));
+routerProducts.get("/products/:id", (req, res) => {
+    af.getById(req.params.id).then((product) => res.json(product))
 });
 
-routerProducts.post("/products/modify", (req, res) => {
-    af.getById(req.params.id).then(res.render("formSelectIdToUpdate", {id}
-    ));
-});
-
-routerProducts.get("/products/modify/:id", (req, res) => {
+routerProducts.get("/products/:id/modify", (req, res) => {
     af.getById(req.params.id).then((product) => res.render("formUp", 
     {
         product: product
@@ -60,7 +54,7 @@ routerProducts.get("/products/modify/:id", (req, res) => {
     ));
 });
 
-routerProducts.put("/products/modify/:id", (req, res) => {
+routerProducts.put("/products/:id/modify", (req, res) => {
     af.update(req.params.id, req.body).then(res.redirect("/productsList"));
 });
 

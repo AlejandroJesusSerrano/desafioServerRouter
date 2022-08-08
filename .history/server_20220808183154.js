@@ -43,11 +43,6 @@ routerProducts.post("/products", (req, res) => {
 });
 
 routerProducts.get("/products/modify", (req, res) => {
-    af.getById(req.params.id).then(res.render("formSelectIdToUpdate", {}
-    ));
-});
-
-routerProducts.post("/products/modify", (req, res) => {
     af.getById(req.params.id).then(res.render("formSelectIdToUpdate", {id}
     ));
 });

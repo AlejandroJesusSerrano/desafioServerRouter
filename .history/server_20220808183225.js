@@ -47,11 +47,6 @@ routerProducts.get("/products/modify", (req, res) => {
     ));
 });
 
-routerProducts.post("/products/modify", (req, res) => {
-    af.getById(req.params.id).then(res.render("formSelectIdToUpdate", {id}
-    ));
-});
-
 routerProducts.get("/products/modify/:id", (req, res) => {
     af.getById(req.params.id).then((product) => res.render("formUp", 
     {
