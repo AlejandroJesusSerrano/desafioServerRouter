@@ -74,10 +74,6 @@ routerProducts.get("/products", (req, res) => {
     res.render("form")
 });
 
-routerProducts.get("/chat", (req, res) => {
-    res.render("chat")
-});
-
 routerProducts.post("/products", (req, res) => {
     af.save(req.body).then(res.render("form", {
     }));

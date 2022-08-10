@@ -74,10 +74,6 @@ routerProducts.get("/products", (req, res) => {
     res.render("form")
 });
 
-routerProducts.get("/chat", (req, res) => {
-    res.render("chat")
-});
-
 routerProducts.post("/products", (req, res) => {
     af.save(req.body).then(res.render("form", {
     }));
@@ -114,5 +110,5 @@ const PORT = process.env.PORT || 8080;
 httpServer.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
 });
-
-httpServer.on ("error", error => console.log(`Error: ${error}`))
+    
+server.on ("error", error => console.log(`Error: ${error}`))
