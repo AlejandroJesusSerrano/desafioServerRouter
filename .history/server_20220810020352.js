@@ -1,10 +1,10 @@
 const express = require('express');
-const handlebars = require("express-handlebars");
 const app = express();
 const { Server : SocketServer } = require('socket.io');
 const { Server : HTTPServer } = require('http');
 
-const routes = require('./routes/routes');
+const productRoutes = require('./routes/routes');
+const messageRoutes = require('./routes/messages');
 
 const events = require("./socketEvents");
 
@@ -16,8 +16,6 @@ const p = new Container("./files/products.json");
 // ChatHistoryContainer
 const Container2 = require("./class/container");
 const m = new Container2("./files/chatHistory.json");
-
-const messages = m.getAll();
 
 const hbs = handlebars.create({
     extname: '.hbs',
@@ -31,8 +29,7 @@ app.set('view engine', 'hbs');
 app.set('views', './views');
 
 app.use(express.static('public'));
-app.use("/products", routes);
-app.use("/chat", routes);
+app.use("/products", productRoutes);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

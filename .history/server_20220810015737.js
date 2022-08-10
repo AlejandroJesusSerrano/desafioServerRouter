@@ -1,10 +1,10 @@
 const express = require('express');
-const handlebars = require("express-handlebars");
 const app = express();
 const { Server : SocketServer } = require('socket.io');
 const { Server : HTTPServer } = require('http');
 
-const routes = require('./routes/routes');
+const productRoutes = require('./routes/product');
+const messageRoutes = require('./routes/messages');
 
 const events = require("./socketEvents");
 
@@ -17,22 +17,8 @@ const p = new Container("./files/products.json");
 const Container2 = require("./class/container");
 const m = new Container2("./files/chatHistory.json");
 
-const messages = m.getAll();
-
-const hbs = handlebars.create({
-    extname: '.hbs',
-    defaultLayout: 'index.hbs', 
-    layoutsDir: __dirname + '/views/layout',
-    //partialsDir: __dirname + 'views/partials/'
-});
-    
-app.engine('hbs', hbs.engine);
-app.set('view engine', 'hbs');
-app.set('views', './views');
-
 app.use(express.static('public'));
-app.use("/products", routes);
-app.use("/chat", routes);
+app.use("/products", productRoutes);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -40,11 +26,11 @@ app.use(express.urlencoded({ extended: true }));
 // productsSockets
 socketServer.on('connection', (socket) => {
     console.log("New client connected");
-    socket.emit(events.PRODUCTS_AGREGATE, p.getAll());
+    socket.emit('products_agregated', p.getAll());
     console.log(p.getAll());
 
-    socket.on(events.POST_PRODUCTS, (prod) => {
-        p.save(prod).then(socketServer.emit(events.PRODUCTS_AGREGATE, p.getAll()
+    socket.on('products_new', (prod) => {
+        p.save(prod).then(socketServer.emit('products_agregated', p.getAll()
         )).catch(err => console.log(err));
     });
 });

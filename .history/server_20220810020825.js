@@ -17,8 +17,6 @@ const p = new Container("./files/products.json");
 const Container2 = require("./class/container");
 const m = new Container2("./files/chatHistory.json");
 
-const messages = m.getAll();
-
 const hbs = handlebars.create({
     extname: '.hbs',
     defaultLayout: 'index.hbs', 
@@ -31,8 +29,7 @@ app.set('view engine', 'hbs');
 app.set('views', './views');
 
 app.use(express.static('public'));
-app.use("/products", routes);
-app.use("/chat", routes);
+app.use("/products", productRoutes);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -17,8 +17,6 @@ const p = new Container("./files/products.json");
 const Container2 = require("./class/container");
 const m = new Container2("./files/chatHistory.json");
 
-const messages = m.getAll();
-
 const hbs = handlebars.create({
     extname: '.hbs',
     defaultLayout: 'index.hbs', 
