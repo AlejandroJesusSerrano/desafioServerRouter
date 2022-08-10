@@ -53,4 +53,60 @@
         </div>  
     </form>
     <div>
-        
+        <h2 class="formTitle">Lista de Productos de Asgard Coleccionables</h2>
+        {{#if listExists}}
+        <div class="tableContainer mx-auto">
+            <table class="table">
+                    <tr class="colTitles">
+                        <th>
+                            <p>
+                                Producto
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                Precio
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                Universe
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                Descripcion
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                Cant. Disponible
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                Imagen
+                            </p>
+                        </th>
+                    </tr>
+                    {{#each allProducts}}
+                    <tr class="tItems">
+                            <td class="prod">
+                                <p>
+                                    {{this.title}}
+                                </p>
+                            </td>
+                            <td class="iPrice">{{this.price}}</td>
+                            <td class="univ">{{this.universe}}</td>
+                            <td class="iDesc">{{this.description}}</td>
+                            <td class="iStock">{{this.stock}}</td>
+                            <td class="iImg">
+                                <img class="cellImg" src={{this.thumbnail}} alt={{this.title}}>
+                            </td>
+                    </tr>
+                    {{/each}}
+            </table>
+        </div>
+        {{/if}}
+    </div>
+</div>

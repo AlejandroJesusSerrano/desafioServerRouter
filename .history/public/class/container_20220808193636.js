@@ -34,19 +34,59 @@ class Container {
         };
     };
 
+    // update = async (id, product) => {
+    //     try {
+    //         const index = await this.container.findIndex(prod => prod.id === id);
+            
+    //         this.container[index] = product;    
+    //         this.saveAll(this.container);
+    //         return product;
+    //     } catch (error) {
+    //         console.log (error);
+    //     };
+    // };
+
+    // update = async (id, product) => {
+    //     try {
+    //             const index = await this.container.findIndex(prod => prod.id === id);
+                
+    //             if(index<=0 || isNaN(id) || productToUpdate.Error) 
+    //             {
+    //                 const notFind = {Error: "Producto no encontrado"};
+    //                 return notFind;            
+    //             } else {
+    //                 product.name = index.name;
+    //                 product.price = index.price;
+    //                 product.description = index.description;  
+    //                 product.universe = index.universe;
+    //                 product.details = index.details;
+    //                 product.stock = index.stock;
+    //             }
+            
+    //         this.saveAll(this.container);
+
+    //     } catch (err) {
+    //         console.log ( 'lo sentimos a habido un error', err);
+    //     };
+    // };
+
     update = async (id, product) => {
         try {
-            const index = await this.container.findIndex(prod => prod.id == id);
-            
-            this.container[index] = product;
-            this.saveAll(this.container);
-            return product;
-            } catch (err) {
-            
+            const index = await this.container.findIndex(prod => prod.id === id);
+            if(index<=0 || isNaN(id) || productToUpdate.Error)
+            {
+                const notFind = {Error: "Producto no encontrado"};
+                return notFind;
+            } else {
+                this.container[index] = product;
+                this.saveAll(this.container);
+                return product;
+            }
+        } catch (err) {
             console.log ( 'lo sentimos a habido un error', err);
         }
     };
-
+    
     
     getById  = async (id) => {
         try { 
@@ -67,7 +107,7 @@ class Container {
             return this.container;
 
         } catch (err) {
-            console.log ('lo setimos a habido un error', err);
+              console.log ('lo setimos a habido un error', err);
         };
     };
 

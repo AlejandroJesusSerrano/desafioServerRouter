@@ -106,11 +106,11 @@ routerProducts.delete("/products/:id", (req, res) =>{
 });
 
 const PORT = process.env.PORT || 8080;
-
 httpServer.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
 });
     
+
 const server = app.listen (PORT, () => {
     console.log (`server listen port ${PORT}`)
 }); 

@@ -11,8 +11,13 @@
 </head>
 <body>
     {{{body}}}
-    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+    <script>
+        const url = "http://localhost:8080/dynamicTable.hbs";
+        fetch(url).then((response) => {
+            console.log(response);
+            return response.text();
+        }).then((text) => console.log(text));
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>  
 </body>
 </html>

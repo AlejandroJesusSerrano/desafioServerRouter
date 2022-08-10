@@ -6,6 +6,7 @@ const events = require("./socketEvents");
 // Express
 const handlebars = require("express-handlebars");
 const app = express();
+const PORT = 8080;
 // Routes & Class
 const Container = require('./public/class/container'); 
 const products = "./files/products.json";
@@ -33,34 +34,6 @@ const hbs = handlebars.create({
 app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 app.set('views', './views');
-
-// SocketServer Products
-socketServer.on("connection", (socket) => {
-    console.log('New client connected');
-    socketServer.emit(events.PRODUCTS_AGREGATE, af.getAll());
-
-    socket.on(events.POST_PRODUCTS, (product)=>{
-        af.save(product);
-        socketServer.emit(events.PRODUCTS_AGREGATE, af.getAll());
-    });
-});
-
-//Socket Sever Messages
-// socketServer.on("connection", (socket) => {
-//     console.log('New client connected');
-//     socketServer.emit(events.UPDATE_MESSAGES, "Welcome to WebSocket", messages);
-
-//     socket.on(events.POST_MESSAGE, (msg)=>{
-//         const _msg = {
-//             ...msg,
-//             id: socket.id,
-//             likes: 0,
-//             date: Date.now()
-//         };
-//         container.save(_msg);
-//         socketServer.sockets.emit(events.NEW_MESSAGE, _msg);
-//     });
-// });
 
 // Routes
 routerProducts.get("/productsList", (req, res) => {
@@ -104,13 +77,8 @@ routerProducts.put("/products/modify/:id", (req, res) =>{
 routerProducts.delete("/products/:id", (req, res) =>{
     af.deleteById(req.params.id).then((product) => res.json(product))
 });
-
-const PORT = process.env.PORT || 8080;
-
-httpServer.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`)
-});
     
+
 const server = app.listen (PORT, () => {
     console.log (`server listen port ${PORT}`)
 }); 

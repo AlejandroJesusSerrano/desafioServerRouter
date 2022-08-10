@@ -6,11 +6,12 @@ const events = require("./socketEvents");
 // Express
 const handlebars = require("express-handlebars");
 const app = express();
+const PORT = 8080;
 // Routes & Class
 const Container = require('./public/class/container'); 
 const products = "./files/products.json";
 const af = new Container(products);
-const msgs = new Container("./files/messages.json");
+const msgs = new Container("./files/messages");
 const { Router } = require("express");
 const routerProducts = Router();
 
@@ -39,7 +40,7 @@ socketServer.on("connection", (socket) => {
     console.log('New client connected');
     socketServer.emit(events.PRODUCTS_AGREGATE, af.getAll());
 
-    socket.on(events.POST_PRODUCTS, (product)=>{
+    socket.on(events.POST_PRODUCTS, (porduct)=>{
         af.save(product);
         socketServer.emit(events.PRODUCTS_AGREGATE, af.getAll());
     });
@@ -104,13 +105,8 @@ routerProducts.put("/products/modify/:id", (req, res) =>{
 routerProducts.delete("/products/:id", (req, res) =>{
     af.deleteById(req.params.id).then((product) => res.json(product))
 });
-
-const PORT = process.env.PORT || 8080;
-
-httpServer.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`)
-});
     
+
 const server = app.listen (PORT, () => {
     console.log (`server listen port ${PORT}`)
 }); 

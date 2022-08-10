@@ -3,11 +3,11 @@
         <form action="/products/modify/:id" method="PUT">
             <div class="title">
                 <label for="title">Corregir titulo:</label>
-                <input name="title" id="title" value=`${product.title}` type="text">
+                <input name="title" id="title" value="{{product.title}}" type="text">
             </div>
             <div class="price">
                 <label for="price">Corregir precio de venta:</label>
-                <input name="price" id="price" value=`${product.price}` type="number">
+                <input name="price" id="price" value={{product.price}} type="number">
             </div>
             <div class="image">
                 <div class="btnModel">
@@ -20,7 +20,7 @@
             </div>
             <div class="desc">
                 <label for="description">Corregir descricion del producto:</label>
-                <input name="description" id="description" value=`${product.description}` type="text">
+                <input name="description" id="description" value=`{{product.description}}` type="text">
             </div>
             <div class="universe">
                 <label for="universe">Corregir universo de clasificacion:</label>
@@ -36,15 +36,15 @@
             </div>
             <div class="details">
                 <label for="details">Corregir detalles:</label>
-                <textarea name="details" id="details" value=`${product.details}` cols="30" rows="10"></textarea>
+                <textarea name="details" id="details" value={{product.details}} cols="30" rows="10"></textarea>
             </div>
             <div class="stok">
                 <label for="stock">Corregir Stock Dipsonible:</label>
-                <input name="stock" id="stock" value=`${product.stock}`  type="number">
+                <input name="stock" id="stock" value={{product.stock}}  type="number">
             </div>
             <div class="btnContainer">
                     <button id="addProduct" type="submit" class="addProduct">
-                        <span>Agregar</span>
+                        <span>Modificar</span>
                     </button>
                     <button class="goToList" type="button" onclick="window.location.href='/productsList'">
                         <span>Volver</span>
