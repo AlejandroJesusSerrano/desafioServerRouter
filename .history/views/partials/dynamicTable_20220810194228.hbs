@@ -1,0 +1,56 @@
+<div id="product">
+    <table class="table">
+        <thead>
+            <tr class="colTitles">
+                <th>
+                    <p>
+                        Producto
+                    </p>
+                </th>
+                <th>
+                    <p>
+                        Precio
+                    </p>
+                </th>
+                <th>
+                    <p>
+                        Universe
+                    </p>
+                </th>
+                <th>
+                    <p>
+                        Descripcion
+                    </p>
+                </th>
+                <th>
+                    <p>
+                        Cant. Disponible
+                    </p>
+                </th>
+                <th>
+                    <p>
+                        Imagen
+                    </p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each product}}
+            <tr class="tItems">
+                    <td class="prod">
+                        <p>
+                            {{title}}
+                        </p>
+                    </td>
+                    <td class="iPrice">{{price}}</td>
+                    <td class="univ">{{universe}}</td>
+                    <td class="iDesc">{{description}}</td>
+                    <td class="iStock">{{stock}}</td>
+                    <td class="iImg">
+                        <img class="cellImg" src={{thumbnail}} alt={{title}}>
+                    </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

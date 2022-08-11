@@ -34,16 +34,6 @@ class Container {
         };
     };
 
-    saveToTable = async (item) => {
-        try {
-        this.container.push(item);
-        this.saveAll(this.container);
-        return item;
-        } catch (err) {
-            console.log(err);
-        }
-    };
-
     update = async (id, product) => {
         try {
             const index = await this.container.findIndex(prod => prod.id == id);

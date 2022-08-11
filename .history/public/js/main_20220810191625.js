@@ -6,8 +6,9 @@ socket.on("connect", ()=> {
 
 //Products
 socket.on("PRODUCTS_AGREGATE", (product) => {
-    const url = "http://localhost:3000/dynamicTable.hbs";
+    const url = "http://localhost:3000/views/dynamicTable.hbs";
     fetch(url).then((response) => {
+        console.log(response);
         return response.text();
     }).then((text) => {
         const template = Handlebars.compile(text);

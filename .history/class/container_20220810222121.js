@@ -34,14 +34,10 @@ class Container {
         };
     };
 
-    saveToTable = async (item) => {
-        try {
+    saveToTable(item) {
         this.container.push(item);
         this.saveAll(this.container);
         return item;
-        } catch (err) {
-            console.log(err);
-        }
     };
 
     update = async (id, product) => {

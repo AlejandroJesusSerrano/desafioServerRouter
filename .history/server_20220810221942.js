@@ -27,7 +27,7 @@ socketServer.on('connection', (socket) => {
     socket.emit(events.PRODUCTS_AGREGATE, p.getAll());
 
     socket.on(events.POST_PRODUCTS, (prod) => {
-        p.saveToTable(prod).then(socketServer.emit(events.PRODUCTS_AGREGATE, p.getAll()))
+        p.save(prod).then(socketServer.emit(events.PRODUCTS_AGREGATE, p.getAll()))
         console.log(prod)
         .catch(err => console.log(err));
     });

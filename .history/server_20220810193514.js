@@ -1,9 +1,13 @@
 const express = require('express');
+const handlebars = require("express-handlebars");
 const app = express();
 const { Server : SocketServer } = require('socket.io');
 const { Server : HTTPServer } = require('http');
-const productRoutes = require('./routes/product')
+
+const routes = require('./routes/routes');
+
 const events = require("./socketEvents");
+
 const httpServer = new HTTPServer(app);
 const socketServer = new SocketServer(httpServer); 
 // ProductsContainer
@@ -12,12 +16,26 @@ const p = new Container("./files/products.json");
 // ChatHistoryContainer
 const Container2 = require("./class/container");
 const m = new Container2("./files/chatHistory.json");
+
 const messages = m.getAll();
+
+const hbs = handlebars.create({
+    extname: '.hbs',
+    defaultLayout: 'index.hbs', 
+    layoutsDir: __dirname + '/views/layout',
+    //partialsDir: __dirname + 'views/partials/'
+});
+    
 const dayjs = require('dayjs')
 let nowDayJs = dayjs().format("DD/MM/YYYY HH:mm:ss");
 
+app.engine('hbs', hbs.engine);
+app.set('view engine', 'hbs');
+app.set('views', './views');
+
 app.use(express.static('public'));
-app.use("/", productRoutes);
+app.use("/", routes);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -25,11 +43,11 @@ app.use(express.urlencoded({ extended: true }));
 socketServer.on('connection', (socket) => {
     console.log("New client connected");
     socket.emit(events.PRODUCTS_AGREGATE, p.getAll());
+    console.log(p.getAll());
 
     socket.on(events.POST_PRODUCTS, (prod) => {
-        p.saveToTable(prod).then(socketServer.emit(events.PRODUCTS_AGREGATE, p.getAll()))
-        console.log(prod)
-        .catch(err => console.log(err));
+        p.save(prod).then(socketServer.emit(events.PRODUCTS_AGREGATE, p.getAll()
+        )).catch(err => console.log(err));
     });
 });
 
@@ -65,7 +83,7 @@ socketServer.on("connection", (socket) => {
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + './index.hbs')
+    res.sendFile(__dirname + '/views/index.hbs')
 });
 
 const PORT = 3000;

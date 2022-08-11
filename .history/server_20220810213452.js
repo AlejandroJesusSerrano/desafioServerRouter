@@ -27,9 +27,8 @@ socketServer.on('connection', (socket) => {
     socket.emit(events.PRODUCTS_AGREGATE, p.getAll());
 
     socket.on(events.POST_PRODUCTS, (prod) => {
-        p.saveToTable(prod).then(socketServer.emit(events.PRODUCTS_AGREGATE, p.getAll()))
-        console.log(prod)
-        .catch(err => console.log(err));
+        p.save(prod).then(socketServer.emit(events.PRODUCTS_AGREGATE, p.getAll()
+        )).catch(err => console.log(err));
     });
 });
 
@@ -68,6 +67,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + './index.hbs')
 });
 
+app.po
 const PORT = 3000;
 httpServer.listen(PORT, () => {
     console.log(`listening on port ${PORT}`);
